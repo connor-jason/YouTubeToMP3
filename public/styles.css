@@ -1,0 +1,44 @@
+/* Add custom fonts for YouTube style text */
+@font-face {
+    font-family: 'YouTubeSans';
+    src: url('fonts/YouTubeSansRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YouTubeSans';
+    src: url('fonts/YouTubeSansBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YouTubeSans';
+    src: url('fonts/YouTubeSansBlack.otf') format('opentype');
+    font-weight: 900; 
+    font-style: normal;
+}
+
+/* basic styling */
+body {
+    font-family: 'YouTubeSans', sans-serif;
+    text-align: center;
+    padding: 50px;
+    color: #282828;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#ytman {
+    width: 50vh;
+    height: 50vh;
+}
