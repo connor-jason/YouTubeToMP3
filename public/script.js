@@ -15,6 +15,8 @@ async function convertToMp3() {
 
     // make the api call
     try {
+        document.getElementById('result').innerText = 'Attemping to convert video.'
+
         const response = await fetch(apiUrl, options);
         const result = await response.json();
         const downloadUrl = result.dlink;
