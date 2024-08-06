@@ -1,21 +1,21 @@
 /* Add custom fonts for YouTube style text */
 @font-face {
     font-family: 'YouTubeSans';
-    src: url('fonts/YouTubeSansRegular.otf') format('opentype');
+    src: url('/fonts/YouTubeSansRegular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'YouTubeSans';
-    src: url('fonts/YouTubeSansBold.otf') format('opentype');
+    src: url('/fonts/YouTubeSansBold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'YouTubeSans';
-    src: url('fonts/YouTubeSansBlack.otf') format('opentype');
+    src: url('/fonts/YouTubeSansBlack.otf') format('opentype');
     font-weight: 900; 
     font-style: normal;
 }
@@ -28,11 +28,25 @@ body {
     color: #282828;
 }
 
-input, button {
+input {
+    font-family: 'YouTubeSans', sans-serif;
     padding: 10px;
     margin: 10px;
     width: 80%;
 }
+
+button {
+    font-family: 'YouTubeSans', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    background-color: #FF0000;
+}
+
+button:active {
+    background-color: #ca0000;
+}
+
 
 #result {
     margin-top: 20px;
