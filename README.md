@@ -15,6 +15,7 @@
 - Converts YouTube videos to MP3 format and automatically downloads it.
 - Provides a download link as a backup if the download did not start.
 - Displays real-time status updates on the conversion process.
+- Displays an error message if the link is not a YouTube link.
 - Responsive design for seamless use on both desktop and mobile devices.
 
 💭 **Process:**
@@ -29,7 +30,6 @@
 - The project provided insights into the process of integrating third-party APIs and handling user input effectively.
 
 ✨ **Improvements:**
-- Add error handling for invalid YouTube URLs and API response failures.
 - Expand the application to support additional audio formats and quality options.
 - Improve the UI with animations and more engaging design elements.
 
