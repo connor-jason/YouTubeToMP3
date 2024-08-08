@@ -8,7 +8,7 @@ async function convertToMp3() {
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'secretapikey',
+            'x-rapidapi-key': 'supersecret',
             'x-rapidapi-host': 'youtube-mp3-downloader2.p.rapidapi.com'
         }
     };
@@ -30,6 +30,13 @@ async function convertToMp3() {
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+
+            // display success message and offer link if the download didn't start for whatever reason
+            document.getElementById('result').innerText = 'Video successfully downloaded. If your download did not start, click ';
+            const downloadLink = document.createElement('a');
+            downloadLink.href = downloadUrl;
+            downloadLink.innerText = 'here';
+            document.getElementById('result').appendChild(downloadLink);
         } else {
             document.getElementById('result').innerText = 'Conversion in progress. Please try again in a few moments.';
         }
