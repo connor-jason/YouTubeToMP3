@@ -36,6 +36,7 @@
 🚦 **Running the Project:**
 To run the project locally:
 - Clone the repository from GitHub.
+- Add your own API key for ![this YouTube to MP3 API](https://rapidapi.com/420vijay47/api/youtube-mp3-downloader2)
 - Type `node server.js` to launch the website on localhost:3000.
 
 📸 **Demonstration of the Application:**
